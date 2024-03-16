@@ -119,7 +119,7 @@ model.compile(optimizer=RMSprop(), loss='categorical_crossentropy', metrics=['ac
 model.summary()
 
 batch_size = 64
-epochs = 400
+epochs = 15
 model.fit([encoder_input_data_train, decoder_input_data_train],
           decoder_output_data_train,
           batch_size=batch_size,
